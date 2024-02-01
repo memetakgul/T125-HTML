@@ -1,0 +1,12 @@
+.p1{
+    color: brown;
+}
+
+p:hover{
+    color: aquamarine;
+    background-color: brown;
+}
+
+h3.p1{
+    color: red ;border: solid black;
+}

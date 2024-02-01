@@ -1,0 +1,22 @@
+#selectorExample, .selectorExample2, p {
+    color: rgb(22, 121, 40);
+}
+
+#boxShadowExample{
+    border: solid chocolate; 
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 15px 15px grey;
+}
+
+#hoverExample {
+    background-color: rgb(226, 162, 43);
+    border: solid;
+}
+
+#hoverExample:hover {
+    border: solid red;
+    background-color: rgb(0, 110, 255);
+    cursor:  pointer;
+    box-shadow: 10px 10px 8px black;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/05_fithPage/style.css">
+</head>
+<body>
+    
+<h2>CSS in bazi ozellikleri</h2>
+
+<ul style="border: solid 5px red; margin: 36px; padding: 55px;">
+    <li style="color: chocolate;"><b>color: </b>texting rengini belirler. </li>
+    <li ><b>font-family:</b> yazinin tipini belirler. </li>
+      <ul>
+        <li style="font-family: 'Times New Roman', Times, serif;">times new roman</li>
+        <li style="font-family: Arial, Helvetica, sans-serif;">Ariel</li>
+        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Verdana</li>
+      </ul>
+
+    <li style="font-size: 15px;"><b style="font-size: x-large;">Font size:</b> yazi buyuklugunu belirler.</li>
+    <li style="border: solid; border-top-color: blue;"><b >Border:</b> html elementinin etrafina border sinir cizer.</li>
+    <li><b class="selectorExample2">margin:</b> border in disina dort bir tarafindan bosluk birakir.</li>
+    <li style="padding-left: 25px;"><b class="selectorExample2">padding:</b> border ile metin arasinda bosluk birakir. </li>
+    <li><b class="selectorExample2">selector:</b> id, class, tag vb. olusturacagi bir arada kullanim kombinasyonlarina denir.</li>
+    <code id="selectorExample">
+        #idName, .className, tagName{
+            hepsi icin ayni style vb islemi yapabiliriz.
+        }
+        <br>
+        
+        #selectorExample, .selectorExample2, p {
+            color: rgb(22, 121, 40);
+        }
+    </code>
+</ul>
+
+<p>selector icin ornek paragraf metnidir. </p>
+
+<ul>
+    <li><b>Box-Shadow:</b> cerceveye golgelendirme yapar.</li>
+    <li id="boxShadowExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+</ul><br><br>
+
+<ul>
+    <li><b>selector: Hover </b> olarak kullanilir. fare ile elementin uzerine gelince ilgili css style uygulanir.</li><br>
+    <li id="hoverExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+</ul>
+
+<ul>
+    <li><b>CSS Specifity:</b> ayni elemente etki eden css styling varsa; specifity degeri daha yuksek olan baskin gelir ve o styling uygulanir. </li>
+    <li> inline css > id > class > tag > internal css > external css </li>
+</ul>
+
+
+
+
+
+
+<br><br><br><br>
+<br><br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+    <link rel="icon" href="/03_Second_Page/wisequarter_career-1.png">
+    
+<style>.farkliElementOrnegi{
+        color: rgb(43, 0, 255);
+    }
+    .Baslik{ 
+        background-color: bisque;
+        border: solid;
+
+    }
+    
+
+    </style>
+
+
+</head>
+
+<body>
+    <p> Icindekiler
+        <ol>
+            <li>
+                <!--      API name    Label  -->
+                <a href="#HTMLLinks">HTML Links</a>
+            </li>
+            <li>
+                <a href="#ImageHTML"> Image in HTML</a>
+            </li>
+            <li>
+                <a href="#Favicon">HTML Favicon</a>
+            </li>
+            <li>
+                <a href="#attribute">Attribute</a>
+            </li>
+            <li>
+                <a href="#myAttribute"> id Attribute</a>
+            </li>
+        </ol>
+
+    </p>
+    <div style="background-color: rgb(215, 223, 250);">
+
+    <h1 id="HTMLLinks" class="Baslik">HTML Links </h1>
+    <p><b>a element:</b> ile sayfamiza link ekleyebiliriz <br>
+        <b>href:</b> a elementinde gitmek istenen site <br>
+        <b>target:</b> linkin nasil acilacagini belirtir. <br>
+        <ul>
+            <li><b>_self:</b> yazilmadiginda ayni sayfada default olarak acilir</li>
+            <li><b>_blank:</b> yeni sayfada acilmasini saglar</li>
+        </ul>
+    
+    </p>
+
+<a href="https://wisequarter.com" target="_blank"> Wise Quarter</a> <br>
+<a href="https://google.com" target="_self">Google</a>
+</div>
+
+<h2 id="ImageHTML" class="Baslik">Image in HTML</h2>
+<p>
+    <b>img elemnti:</b> dokumanimiza image yani resim eklemek icin kullanilir. <br>
+    <b>src attribute</b> Source: kaynagimiza ait linki ekler. <br>
+    <b>alt attribute</b> Alternative text: resim ile ilgili herhangi bir sorun yasandiginda resmin yerine gelecek metin <br>
+    <b>width attribute</b> resmin genisligi <br>
+    <b>height attribute</b> resmin yuksekligi <br>
+    <b>responsive size icin '%' ile kullanildiginda sayfanin yuzdesine uygun olarak kullanilir.</b>
+
+</p>
+
+<img src="/03_Second_Page/wisequarter-logo.png" alt="Wise Quarter"> <br>
+
+<img src="wisequarter_career-1.png" alt="Baykus"> <br>
+
+<img src="/Users/mehmetakgul/Desktop/T126 HTML/03_Second_Page/salesforce-developer-1.jpg" alt="Developer" width="400px" height="300px"> <br>
+
+<img src="salesforce-developer-1.jpg" alt="Developer" width="30%" height="35%"> <br>
+
+<p>Resme Link Ekleme</p>
+
+<a href="https://wisequarter.com">Wise Quarter</a> <br> 
+Lutfen resmi Tiklayiniz <br>
+<a href="https://wisequarter.com">Wise Quarter <img src="/03_Second_Page/wisequarter-logo.png" alt=""></a> <br>
+
+<a href="https://wisequarter.com" target="_blank">
+    <img src="/03_Second_Page/wisequarter-logo.png" alt=""></a> <br>
+
+<h2 id="Favicon" class="Baslik">HTML Favicon</h2>
+<p>Sayfa sekmesinde yer alan title metninin soluna kucuk bir resim eklenmesini saglar. HTML dokumanimizin <b>Head </b>  bolumunde yer alir.
+</p>
+
+<p><code class="farkliElementOrnegi"> 
+    link rel="icon" href="/03_Second_Page/wisequarter_career-1.png" 
+</code></p>
+
+<h1 id="attribute" class="Baslik">Attribute</h1>
+<p>Bir elementte birden fazla attribute kullanilabilir. Attributeler arsinda bosluk birakarak veya ; ile ayirarak birden fazla eklenilmasi saglanabilir. <br> <br>
+    <code class="farkliElementOrnegi">
+        <img src="salesforce-developer-1.jpg" alt="Developer" width="30%" height="35%"> 
+    </code> <br>
+
+    height="35%"
+    name=value pair lari seklinde kullanilir.
+    <b>attribute daima acilis tagine eklenir</b>
+</p>
+
+<h1 id="myAttribute" class="Baslik"> id Attribute</h1>
+
+<ul>
+    <li>HTML element leri icin unique id olusturulmasini saglar.</li>
+    <li> CSS ve JavaScript, belirli bir elementle ilgili (style/select)</li>
+
+    <ul>
+        <li>CSS te belirli bir elemente <b>#ElementId</b> ile ulasilabilir.</li>
+        <li>JavaScript te belirli bir elemente <b>getElementByID()</b> ile ulasilabilir</li>
+        <!-- getElementById(elementIdsiniBurayaYazilir) -->
+        <li>id case sensitivedir. Buyuk kucuk harf fark eder. </li>
+    </ul>
+
+</ul>
+
+<h2 class="Baslik">Class Attribute</h2>
+
+<p class="farkliElementOrnegi">Elementler icin Class (container) olusturur. 
+    CSS ve JavaScript ten ayni class attribute e sahip class name e sahip elementlere ulasmayi ve ilgili islem yapmayi saglar. 
+</p>
+
+<ul >
+    <li>Bir element icin birden fazla class belirlenebilir. </li>
+    <!-- hem kanarya sevenlere hem de kedi sevenler dernegine uye -->
+    <li>Class attribute <b>Global attribute</b> tur. Neredeyse butun elementlerde kullanilabilir.</li>
+    <li>Farkli elementler ayni class attribute une sahip olabilir. </li>
+    <li class="farkliElementOrnegi">CSS ten bir class a ulasmak icin <b>" .ClassName "</b> ile ulasilir. </li>
+    <li>JavaScript ten belli bir class a ulasmak icin <b>" getElementByClassName() "</b></li>
+    <li><b>Class name </b> case sensitive dir. </li>
+</ul>
+
+<p>
+    iframe ile ilgili bilgilere ulasmak icin lutfen <a href="/03_Second_Page/03_Third_Page.html" target="_blank">tiklayiniz</a>.
+
+</p>
+
+
+
+<br><br><br><br><br><br><br>
+
+</body>
+</html>

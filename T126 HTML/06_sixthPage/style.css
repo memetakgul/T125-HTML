@@ -1,0 +1,15 @@
+.Gunler,.Yiyecek{
+    background-color: rgb(0, 255, 153);
+}
+
+td{
+    color: red;
+}
+
+.cell:nth-child(even){
+    background-color: beige;
+}
+
+.cell:nth-child(odd){
+    background-color: burlywood;
+}

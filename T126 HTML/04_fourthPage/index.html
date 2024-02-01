@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="/04_fourthPage/style.css">
+    <style>
+        h1{
+            background-color: crimson;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        .vowel{background-color: darkgreen;
+        }
+        .consonant{background-color:chocolate;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>CSS: Cascading Style Sheets</h1>
+<h1>(merhaba)</h1>
+<p>Cascading: parent elemente uygulanan style islemi child larar da etki etmesini saglar.  <br>
+Bir elementin ecerisinde baska bir element olusturuldugunda disaridaki parent icerideki child olur. 
+</p>
+
+<p style="font-family: 'Times New Roman', Times, serif;"><b>inline CSS:</b> elementlerin acilis tag i icersinde style attribute ile css isleminin yapilmasidir. <br>
+    Childe yapilan CSS style, parent a yapilan css style a override eder.
+</p>
+
+<p style="color: red;">inline css ornek</p>
+<!-- Disarida olan p deki style parenttir.
+    iceride olan b deki style childdir.
+-->
+<p style="color: blue;">
+    <b style="color: red;">parent child ornek</b>
+</p>
+
+ <!--parent --> <p style="color: blue;"> 
+   <!--child --> <b >parent child ornek</b>
+    <!--child --> <b >parent child ornek2</b>
+    <!--child --> <b >parent child ornek3</b>
+    <!--child --> <b style="color: blueviolet;" >parent child ornek4</b>
+<!--parent--> </p>
+
+<!-- ozel olarak daha fzla emek vererek olusturdugunuz css style digerine baskin gelir. -->
+
+
+<ol style="color: red;">
+    <li>elma</li>
+    <li>armut</li>
+    <li style="color: chartreuse;">cilek</li>
+    <li>kavun</li>
+    <li>ayva</li>
+</ol>
+
+<p><b>internal css:</b> Head sectionda yapilan style islemine internal style denir. 
+</p>
+
+<ul>
+    <li class="vowel">a</li>
+    <li class="consonant">b</li>
+    <li  class="consonant">c</li>
+    <li  class="consonant">d</li>
+    <li class="vowel">e</li>
+    <li  class="consonant">f</li>
+    <li  class="consonant">h</li>
+    <li  class="consonant" style="color: rgb(255, 0, 0);">g</li>
+    <li class="vowel">i</li>
+
+</ul>
+
+<p><b>External css;</b> web sayfalari genellikle birden fazla sayfadan olusur. Butun sayfalarin stylerinin ayni olmasiistenir. Bu islemin hepsine birden tek bir css file ile islem yapilmasi <b>external css</b> ile saglanir.</p>
+
+<p>Head section da link elementi ile html dosyasi ile css dosyasini iliskilendirebilirz.</p>
+
+<code> link rel="stylesheet" href="/04_fourthPage/style.css" </code>
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

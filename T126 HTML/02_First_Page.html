@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>First Page</title>
+</head>
+<body>
+   Buraya doğrudan yazi yazabiliriz. Ancak buraya yazacağimiz metni yönlendirmemiz, edit etmemiz kolay olmaz. bundan dolayi belirli elementer ile yazilmasi tercih edilmelidir.
+   <!-- Heading/title için <h1> <h6> ya kadar farkli büyüklüklerde başlik oluşturabiliriz.
+      
+      elementi
+      <opening tag> içerik    </closing tag>
+      <açiliş tagi> içerik    </kapaniş tagi>
+      <h1>           içerik    </h1>
+   -->
+      <h1>Başlik 1</h1>
+      <h2>Başlik 2</h2>
+      <h3>Başlik 3</h3>
+      <h4>Başlik 4</h4>
+      <h5>Başlik 5</h5>
+      <h6>Başlik 6</h6>
+<!-- <p></p> paragraf için kullanilir. -->
+      <p>Burasi bir paragraf elementi örneğidir.</p>
+      <P>Burasi başka bir paragraf elementi örneğidir.</P>
+      <!-- Note: HTML is not Case Sensitive: büyük küçük harf duyarli değildir.  <p></p> Pp, pP, PP -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur voluptatum natus quas architecto neque? Rerum cupiditate explicabo possimus impedit distinctio aut repellat facilis laudantium. Fugiat, consequuntur! Fugiat inventore dolor labore!</p>
+<!-- <br> tag i break verir. Yani satir başi yapilmasini sağlar.
+   br taginin kapaniş tag i yoktur. 
+-->
+      <p> Bu parafrafi br tag elementi ni öğrenmek için oluşturduk.
+         
+         
+         
+         paragraf içerisinde ben her ne kadar kod kisminda satir başi yapsamda alt satira geçmeyecektir. <br>
+         Ancak br kullanirsak bir alt satira geçecektir. 
+      </p>
+      
+      <!-- <hr> horizontal line çeker. yani sayfamizda ayri bir bölüm olarak gözükmesini istenildiğinde kullanilir.  
+      hr in kapaniş tag i yoktur. 
+      -->
+<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolores blanditiis perspiciatis, ipsam distinctio nam. Est, corporis numquam ducimus nam voluptate culpa veniam necessitatibus aspernatur vero vitae, quos, distinctio delectus?</p>
+​
+<!-- Formatting için yaygin kullanilan bazi HTML elementleri -->
+​
+<!-- <b> bold elementi içerisinde metin bold yani kalin olur. -->
+<!-- <strong> elementi içerisinde metin bold yani kalin olur. -->
+​
+<!-- strong, b ile em, i ile ayni şekilde yazar. Ancak accesibality yani görme engelli olan bir kişi bizim sayfamizdaki metni okunmasini istediğinde strong ve em ile yazili olan vurgulu okunur.
+SEO-Search Engine Optimization için özel bir etiket özelliğine sahip olur öncelikli olarak taranmasini sağlar. ancak çok sayida kullanilirsa etkili olmaz.
+-->
+​
+<!-- <i> italic elementi içerisindeki metni italik yani eğik yazar. -->
+<!-- <em> emphasize elementi içerisindeki metni italik yani eğik yazar. -->
+​
+<!-- <u> underline elementi içerisindeki metnin altini çizer.-->
+<!-- <mark> mark: higlight eder. -->
+​
+<p>Bu paragrafi formatting örneği olarak yazildi. <strong>Bazilari</strong>  <b>kalin</b>  bazilari <i>italik</i>  ve <em>vurgulu</em>  bir başka örneği <u>alti çizili</u> . <mark> Highlihted</mark> edilen metin örneği verelim. <br>
+<mark> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magni porro eum vel atque deleniti perferendis quibusdam blanditiis dolor reprehenderit officiis repellendus tempore doloribus sit nemo totam et a iure?
+</p>
+<!-- <bdo> yazinin yönünü değiştirir. 
+dir=> direction, rtl : rigt to left ltr: left to right   
+-->
+<!-- <bdo dir="rtl"> yazinin yönünü değiştir. 
+         attribute dir ="rtl"
+​
+         name= "value"
+         dir = "rtl"
+-->
+<!-- <bdo dir="rtl"> yazinin yönünü değiştirir. -->
+​
+<p> <bdo dir="rtl">Ey Edip Adana'da pide ye!</bdo></p>
+<p> <bdo dir="rtl">Ey Melek Adana'da kelem ye!</bdo></p>
+<p> <bdo dir="rtl">Yazinin yönünü değiştirir.</bdo></p>
+​
+<!-- iç içe bir den fazla element kullanilabilir. -->
+<!-- small: metni küçültür. -->
+<p>
+   <b><i>Element</i></b>  leri ve ilgili <i><b>tag</b></i>    leri amacine göre  <small>iç</small> <small> <small>içe</small></small>  bir den fazla kullanabiliriz. 
+</p>
+​
+​
+<!-- code örneği paylaşilmasi için -->
+<p>
+   Aşağida bir JavaScript code örneği verilmiştir. <br>
+   <code>
+      Console.log('Merhaba Dünya!!!');
+   </code>
+   Bu sefer de ayni kodu APEX te yazalim. <br>
+   <code>
+      System.Debug('Merhaba Dünya!!!');
+   </code>
+</p>
+​
+<!-- cite örneği; alıntı yapıldığını belirtir.  
+   citation 
+-->
+<p>
+   I love programing and my favorite quote about programming is; <br>
+   <cite>
+      "Any fool can write code that a computer can understand.
+      Good programmers write code that humans can understand."
+   </cite>
+</p>
+
+ <!-- div divisionlara ayirir sectionlara ayirir -->
+
+
+<div style="background-color: blueviolet;">
+   <p>division HTML icerisini bolmelere ayirmaya yarar</p>
+</div>
+
+<div style="background-color: aquamarine;">
+   <p> div ikinci ornek   </p>
+</div>
+
+<h2>HTML de  listeler</h2>
+   <p> <b>ol elementi:</b> ordered lsit, elementi sayi veya alfabetik siralama olcutleriyle liste olusturmamizi saglar. 
+   type: attribute siralama turunu degistirir.  </p>
+
+   <ol>Merhaba</ol>
+
+   <p> <b>li elementi:</b> lsiteye madde eklemeye saglar</p>
+
+<h4>Sira Ile Alinmasi Gereken Salesforce Sertifikalari</h4>
+
+<ol>
+   <li>Salesforce Admin </li>
+   <li>Salesforce Advanced Admin </li>
+   <li>Salesforce Developer I </li>
+   <li>Salesforce Developer II</li>
+</ol>
+
+<ol type="I">
+   <li>Salesforce Admin </li>
+   <li>Salesforce Advanced Admin </li>
+   <li>Salesforce Developer I </li>
+   <li>Salesforce Developer II</li>
+</ol>
+
+<p><b>ul elementi:</b> unordered list: siralamasi onemli olmayan lsite olusturulmasinda kullanilir </p>
+
+<h4>Meyve Liste</h4>
+
+<ul>
+   <li>cilek</li>
+   <li>Portakal</li>
+   <li>Nar</li>
+   <li>Ayva</li>
+</ul> 
+
+<ul type="circle">
+   <li>cilek</li>
+   <li>Portakal</li>
+   <li>Nar</li>
+   <li>Ayva</li>
+</ul>
+
+<ul type="square">
+   <li>cilek</li>
+   <li>Portakal</li>
+   <li>Nar</li>
+   <li>Ayva</li>
+</ul> 
+
+</body>
+</html>
